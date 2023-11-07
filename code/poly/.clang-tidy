@@ -1,0 +1,15 @@
+---
+WarningsAsErrors: ''
+HeaderFilterRegex: '(include/poly)'
+FormatStyle: file
+
+Checks: |
+    *,
+    -abseil*,-altera*,-android*,-fuchsia*,-google*,-llvm*,-zircon*,
+    -modernize-use-trailing-return-type,
+    -*-magic-numbers,
+    google-build-using-namespace,
+
+CheckOptions:
+    - key: readability-implicit-bool-conversion.AllowPointerConditions
+      value: true

@@ -1,0 +1,116 @@
+.reveal small {
+    vertical-align: middle;
+    font-size: 0.75em;
+}
+
+.reveal small.rmrk {
+    color: var(--r-link-color);
+    margin-left: 0.6em;
+    margin-bottom: 0.1em;
+}
+
+.reveal section.full {
+    height: 100%;
+}
+
+.reveal li {
+    margin-bottom: 0.25em;
+    margin-top: 0.15em;
+}
+
+.reveal ul.plus {
+    list-style: none;
+}
+
+.reveal ul.plus>li::before {
+    content: "+";
+    color: green;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.reveal ul.min {
+    list-style: none;
+}
+
+.reveal ul.min>li::before {
+    content: "–";
+    color: darkred;
+    display: inline-block;
+    width: 0.95em;
+    margin-left: -0.95em;
+}
+
+.reveal ul.arrow {
+    list-style: none;
+}
+
+.reveal ul.arrow>li {
+    margin-top: 0.8em;
+}
+
+.reveal ul.arrow>li::before {
+    content: "→";
+    display: inline-block;
+    width: 2em;
+    margin-left: -2em;
+}
+
+.reveal .fragment.alert.visible {
+    color: rgb(29, 141, 176);
+}
+
+.reveal .alert:not(.fragment) {
+    color: rgb(29, 141, 176);
+}
+
+.reveal .fragment.alert {
+    opacity: 1;
+    visibility: inherit;
+}
+
+.reveal a {
+    font-family: var(--r-code-font);
+}
+
+.reveal pre code {
+    max-height: 660px;
+}
+
+.reveal .no-ln .hljs-ln-numbers {
+    display: none;
+}
+
+.reveal .fragment:not(.custom) {
+    will-change: unset;
+}
+
+.reveal table.vertline>thead>tr>th:first-child,
+.reveal table.vertline>tbody>tr>td:first-child {
+    border-right: 1px solid black;
+}
+
+.reveal .fragment.blur {
+    filter: blur(6px);
+}
+
+.reveal .fragment.blur.visible {
+    filter: none;
+}
+
+.reveal .fragment.fade-out-and-away {
+    opacity: 1;
+    visibility: inherit;
+}
+
+.reveal .fragment.fade-out-and-away.visible {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+:root {
+    --r-heading4-size: 1.2em;
+    --r-code-font: "Ubuntu Mono", monospace;
+}
