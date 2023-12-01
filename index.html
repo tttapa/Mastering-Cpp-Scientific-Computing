@@ -1825,8 +1825,17 @@
                     <ul>
                         <li>Profiling and performance tools
                             <ul style="font-size: 0.8em;">
-                                <li>gprof <small class="rmrk">(profile analysis, <a
-                                            href="https://sourceware.org/binutils/docs/gprof/">sourceware.org/binutils/docs/gprof</a>)</small>
+                                <li>gprof and gprofng <small class="rmrk">(application profile analysis, <a
+                                            href="https://sourceware.org/binutils/docs/gprofng.html">sourceware.org/binutils/docs/gprofng.html</a>)</small>
+                                </li>
+                                <li>
+                                    Linux perf <small class="rmrk">(profiler with performance counters and trace points,
+                                        including system calls, <a
+                                            href="https://perf.wiki.kernel.org">perf.wiki.kernel.org</a>)</small>
+                                </li>
+                                <li>
+                                    gperftools <small class="rmrk">(heap and CPU profiler, <a
+                                            href="https://github.com/gperftools/gperftools">github.com/gperftools/gperftools</a>)</small>
                                 </li>
                                 <li>Valgrind callgrind <small class="rmrk">(CPU and cache profiler, <a
                                             href="https://valgrind.org/docs/manual/cl-manual.html">valgrind.org/docs/manual/cl-manual.html</a>)</small>
@@ -1837,7 +1846,14 @@
                                 <li>KCachegrind <small class="rmrk">(profile visualization, <a
                                             href="https://github.com/KDE/kcachegrind">github.com/KDE/kcachegrind</a>)</small>
                                 </li>
-                                <li>Intel VTune <small class="rmrk">(commercial profiler)</small></li>
+                                <li>
+                                    FlameScope <small class="rmrk">(interactive flame graphs of <code>perf</code>
+                                        profiles, <a
+                                            href="https://github.com/Netflix/flamescope">github.com/Netflix/flamescope</a>)</small>
+                                </li>
+                                <li>Intel VTune <small class="rmrk">(commercial profiler, <a
+                                            href="https://www.intel.com/content/www/us/en/docs/vtune-profiler/get-started-guide">intel.com/content/www/us/en/docs/vtune-profiler/get-started-guide</a>)</small>
+                                </li>
                                 <li>Google Benchmark <small class="rmrk">(micro-benchmarking framework, <a
                                             href="https://github.com/google/benchmark">github.com/google/benchmark</a>
                                         )</small></li>
@@ -1845,7 +1861,8 @@
                                         Google Benchmark, <a
                                             href="https://quick-bench.com/">quick-bench.com</a>)</small></li>
                                 <li>Compiler Explorer <small class="rmrk">(shows generated
-                                        assembly, <a href="https://godbolt.org/">godbolt.org</a>)</small></li>
+                                        assembly side by side with source code, <a
+                                            href="https://godbolt.org/">godbolt.org</a>)</small></li>
                             </ul>
                         </li>
                     </ul>

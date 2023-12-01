@@ -9,6 +9,10 @@
     margin-bottom: 0.1em;
 }
 
+.reveal small.rmrk * {
+    vertical-align: initial;
+}
+
 .reveal section.full {
     height: 100%;
 }
