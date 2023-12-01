@@ -970,7 +970,7 @@
                 <section class="full">
                     <h4>CMake: further reading</h4>
                     <hr>
-                    <ul>
+                    <ul style="font-size: 0.9em;">
                         <li>Variable scope and cache variables <br><small class="rmrk">(<a
                                     href="https://cmake.org/cmake/help/book/mastering-cmake/chapter/CMake%20Cache.html">cmake.org/cmake/help/book/mastering-cmake/chapter/CMake
                                     Cache.html</a>)</small></li>
@@ -1006,7 +1006,7 @@
                 <section class="full">
                     <h4>Package management: where to get dependencies</h4>
                     <hr>
-                    <ul>
+                    <ul style="font-size: 0.9em;">
                         <li>System package manager <small class="rmrk">(APT, Homebrew, winget)</small>
                             <ul class="plus" style="font-size: 0.66em;">
                                 <li>Easy</li>
@@ -1035,7 +1035,7 @@
                                 <li>Similar drawbacks as above</li>
                             </ul>
                         </li>
-                        <li>C++ package manager <small class="rmrk">(Vcpkg, Conan)</small>
+                        <li>C++ package manager <small class="rmrk">(Vcpkg, Conan, Spack)</small>
                             <ul class="plus" style="font-size: 0.66em;">
                                 <li>Simple declaration of required dependencies, features and versions</li>
                                 <li>Good integration with CMake</li>
@@ -1166,6 +1166,43 @@
                         
                         Total Test time (real) =   0.00 sec</code></pre>
                     <div>
+                </section>
+
+                <section class="full">
+                    <h4>Package management: alternatives</h4>
+                    <hr>
+                    <ul style="font-size: 0.95em;">
+                        <li>Conan <small class="rmrk">(<a href="https://conan.io/">conan.io</a>)</small>
+                            <ul style="font-size: 0.66em;">
+                                <li>Cross-platform C/C++ package manager</li>
+                                <li>Supports many different build systems (CMake, Meson, Visual Studio/MSBuild,
+                                    Autotools ...)</li>
+                                <li>Declarative <code>conanfile.txt</code>, flexible and extensible using Python
+                                    scripting in <code>conanfile.py</code></li>
+                                <li>MIT license</li>
+                            </ul>
+                        </li>
+                        <li>Vcpkg <small class="rmrk">(<a href="https://vcpkg.io/">vcpkg.io</a>)</small>
+                            <ul style="font-size: 0.66em;">
+                                <li>Cross-platform C/C++ package manager</li>
+                                <li>Supports CMake and MSBuild</li>
+                                <li>Good integration with other Microsoft products like Visual Studio</li>
+                                <li>Declarative <code>vcpkg.json</code> manifest file, CMake scripting in
+                                    <code>portfile.cmake</code>
+                                </li>
+                                <li>MIT license, opt-out telemetry</li>
+                            </ul>
+                        </li>
+                        <li>Spack <small class="rmrk">(<a href="https://spack.io/">spack.io</a>)</small>
+                            <ul style="font-size: 0.66em;">
+                                <li>Linux and macOS package manager (no Windows support yet)</li>
+                                <li>Aimed towards high-performance computing and supercomputing</li>
+                                <li>Targets specific microarchitectures for optimal performance, many supported
+                                    scientific languages, module support for managed HPC environments</li>
+                                <li>MIT or Apache-2.0 license</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </section>
             </section>
 
@@ -1394,10 +1431,10 @@
                 <section class="full">
                     <h4>Catching bugs early: Undefined Behavior</h4>
                     <hr>
-                    <ul>
+                    <ul style="font-size: 0.93em;">
                         <li>
                             Undefined Behavior (UB) is a violation of language rules and compiler’s preconditions
-                            <ul class="arrow">
+                            <ul class="arrow" style="font-size: 0.9em;">
                                 <li style="margin-top: 0.2em;">No guarantees about the output of the compiler!</li>
                                 <li style="margin-top: 0;">Runtime crash (e.g. segmentation fault) <small
                                         class="rmrk">(best outcome)</small>
@@ -1451,19 +1488,19 @@
                     <hr>
                     <ul>
                         <li>Address Sanitizer <small class="rmrk">(<code>-fsanitize=address</code>)</small>
-                            <ul>
+                            <ul style="font-size: 0.9em;">
                                 <li>Checks for memory errors (use after free, array out of bounds,
                                     dangling pointers)</li>
                             </ul>
                         </li>
                         <li>Undefined Behavior Sanitizer <small class="rmrk">(<code>-fsanitize=undefined</code>)</small>
-                            <ul>
+                            <ul style="font-size: 0.9em;">
                                 <li>Checks for things like integer overflow, null pointer dereference, division by zero,
                                     pointer misalignment, invalid vpointers</li>
                             </ul>
                         </li>
                         <li>Thread Sanitizer <small class="rmrk">(<code>-fsanitize=thread</code>)</small>
-                            <ul>
+                            <ul style="font-size: 0.9em;">
                                 <li>Checks for data races</li>
                             </ul>
                             <ul class="arrow">
@@ -1727,7 +1764,7 @@
                 <section class="full">
                     <h4>Best practices: documentation</h4>
                     <hr>
-                    <ul>
+                    <ul style="font-size: 0.93em;">
                         <li>Use a documentation generation tool <ul style="font-size: 0.8em;">
                                 <li>Doxygen <small class="rmrk">(<a
                                             href="https://www.doxygen.nl/">www.doxygen.nl</a>)</small></li>
@@ -1762,7 +1799,7 @@
                 <section class="full">
                     <h4>Best practices: continuous integration</h4>
                     <hr>
-                    <ul>
+                    <ul style="font-size: 0.95em;">
                         <li>Continuous integration: Run checks and tests every time you push code
                             <ul style="font-size: 0.9em;">
                                 <li>GitHub Actions <small class="rmrk">(<a
@@ -1992,13 +2029,13 @@
                     <ul>
                         <li>Use a build system generator and package manager to make installation as frictionless as
                             possible <small class="rmrk">(e.g. CMake + Conan)</small></li>
-                        <li>Beware Undefined Behavior</li>
-                        <li>Keep up with best practices</li>
+                        <li>Beware of Undefined Behavior</li>
+                        <li>Keep up with best practices <small class="rmrk">(e.g. C++ Core Guidelines, conference talks)</small></li>
                         <li>Enable compiler warnings and static analysis <small class="rmrk">(e.g. Clang-Tidy)</small>
                         </li>
                         <li>Use continuous integration for running tests (with sanitizers and Valgrind)</li>
                         <li>Include good documentation and examples</li>
-                        <li>Don't get lost in micro-optimizations</li>
+                        <li>Don't get lost in micro-optimizations, measure real-world performance</li>
                     </ul>
                     <div style="margin-top: 3em;">
                         <a
