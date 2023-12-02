@@ -32,11 +32,25 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section>
-                <h3>Mastering C++ for scientific computing:<br>tools, tips, and tricks</h3>
-                <hr>
-                <p>
-                    <small><a href="https://github.com/tttapa">Pieter Pas</a></small>
-                </p>
+                <div style="display: flex; flex-direction: column; justify-content: space-around; height: 700px;">
+                    <div>
+                        <h3>Mastering C++ for scientific computing:<br>tools, tips, and tricks</h3>
+                        <hr>
+                        <p>
+                            <small><a href="https://github.com/tttapa">Pieter Pas</a></small>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    style="text-align: right; font-size: 0.5em; color: var(--r-link-color); opacity: 0.7; height: 0; overflow: visible;">
+                    <div style="display: inline-block; text-align: left;">
+                        <kbd>Space</kbd>:&nbsp; Next slide<br>
+                        <kbd>Shift</kbd>+<kbd>Space</kbd>:&nbsp; Previous slide<br>
+                        <kbd>←</kbd>/<kbd>→</kbd>:&nbsp; Previous/next chapter<br>
+                        <kbd>Esc</kbd>:&nbsp; Overview&nbsp; 
+                        <kbd>F11</kbd>:&nbsp; Full screen
+                    </div>
+                </div>
             </section>
 
             <section class="full">
@@ -2030,7 +2044,8 @@
                         <li>Use a build system generator and package manager to make installation as frictionless as
                             possible <small class="rmrk">(e.g. CMake + Conan)</small></li>
                         <li>Beware of Undefined Behavior</li>
-                        <li>Keep up with best practices <small class="rmrk">(e.g. C++ Core Guidelines, conference talks)</small></li>
+                        <li>Keep up with best practices <small class="rmrk">(e.g. C++ Core Guidelines, conference
+                                talks)</small></li>
                         <li>Enable compiler warnings and static analysis <small class="rmrk">(e.g. Clang-Tidy)</small>
                         </li>
                         <li>Use continuous integration for running tests (with sanitizers and Valgrind)</li>

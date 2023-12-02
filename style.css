@@ -114,6 +114,23 @@
     display: none;
 }
 
+kbd {
+    display: inline-block;
+    padding: 0.1em 0.6em;
+    font-family: Arial, sans-serif;
+    font-size: 0.8em;
+    line-height: 1.4;
+    color: #242729;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+    margin: 1px;
+}
+
 :root {
     --r-heading4-size: 1.2em;
     --r-code-font: "Ubuntu Mono", monospace;
